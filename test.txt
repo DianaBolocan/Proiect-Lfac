@@ -1,0 +1,39 @@
+start_program
+	#defineste @max 255
+	char _al98n (int @a, string @bc) ::start_functie
+		int @i .
+		@i := ( @a + 3 ) .
+		float @vector [ 10 ] .
+		int @vector [ 2 ] .
+		daca ( 2 < 3 ) atunci ::start_bloc
+		::sfarsit_bloc .
+		daca ( @a > 15 ) atunci ::start_bloc ::sfarsit_bloc
+			altfel ::start_bloc
+			::sfarsit_bloc .
+		structura @carne ::start_bloc
+			int @aripi .
+			char @picioare .
+		::sfarsit_bloc @c .
+		@c->@aripi := 0 .
+		cheama _functie ( _functie ( (@ana + @mere) ) , (2 + 3) , @c->@aripi ) .
+	::sfarsit_functie
+	functie_princ() ::start_functie
+		int @a .
+		char @b . 
+		string @c .
+		float @d .
+		copiaza ( @ana->@pere , @mere) .
+		copiaza ( !ana , !mere ).
+		concat ( !ana , !mere) .
+		concat ( @ana->@pere, @mere) .
+		@i := lungime(@ana->@pere).
+		@i := lungime(!ana).
+		@i := cauta (@a , !ana) .
+		@i := compara (@a , !ana) .
+		cheama _functie ( lungime(!ana) , compara(@a , !ana)) .
+		pentru fiecare @i unde ( @i < 5 ) si ( @i + + ) ::start_bloc ::sfarsit_bloc .
+		print ( (2+3) ) .		
+		cat timp ( @a <= @c ) ::start_bloc ::sfarsit_bloc .
+	::sfarsit_functie
+sfarsit_program
+
